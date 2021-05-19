@@ -5,7 +5,7 @@ ENV OPENCV_DOWNLOAD_URL https://github.com/opencv/opencv/archive/$OPENCV_VERSION
 ENV OPENCV_CONTRIB_DOWNLOAD_URL https://github.com/opencv/opencv_contrib/archive/$OPENCV_VERSION.zip
 
 RUN apt-get update \
-  && apt-get install -y \
+  && DEBIAN_FRONTEND="noninteractive" apt-get install -y \
     libfcgi-dev \
     libmemcached-dev \
     libpng-dev \
