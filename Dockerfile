@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:xenial
 
 ENV OPENCV_VERSION 4.5.2
 ENV OPENCV_DOWNLOAD_URL https://github.com/opencv/opencv/archive/$OPENCV_VERSION.zip
