@@ -1,5 +1,6 @@
 FROM ubuntu:hirsute
 
+ENV DEBIAN_FRONTEND noninteractive
 ENV OPENCV_VERSION 4.5.2
 ENV OPENCV_DOWNLOAD_URL https://github.com/opencv/opencv/archive/$OPENCV_VERSION.zip
 ENV OPENCV_CONTRIB_DOWNLOAD_URL https://github.com/opencv/opencv_contrib/archive/$OPENCV_VERSION.zip
